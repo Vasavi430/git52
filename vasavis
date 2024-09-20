@@ -1,0 +1,215 @@
+{
+  "advancedSettings": {
+    "loggingSettings": {
+      "disableLogging": true
+    }
+  },
+  "currentFlow": {
+    "displayName": "Default Start Flow",
+    "name": "projects/wise-colledge-gecq/locations/global/agents/84c0d76b-7e10-477c-b706-4b8697256210/flows/00000000-0000-0000-0000-000000000000"
+  },
+  "currentPage": {
+    "displayName": "Start Page",
+    "name": "projects/wise-colledge-gecq/locations/global/agents/84c0d76b-7e10-477c-b706-4b8697256210/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE"
+  },
+  "diagnosticInfo": {
+    "Response Id": "5d0ba2f6-ca67-4282-ac61-37dd0399531f",
+    "Triggered Transition Names": [
+      "6ca3d873-90d7-4156-b6b7-3f9d4e83fa0b"
+    ],
+    "Session Id": "6297a2-538-b98-246-e7eb864d6",
+    "Alternative Matched Intents": [
+      {
+        "DisplayName": "Default Welcome Intent",
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "Active": true,
+        "Score": 1,
+        "Type": "NLU"
+      }
+    ],
+    "Execution Sequence": [
+      {
+        "Step 1": {
+          "InitialState": {
+            "MatchedIntent": {
+              "DisplayName": "Default Welcome Intent",
+              "Score": 1,
+              "Type": "NLU",
+              "Active": true,
+              "Id": "00000000-0000-0000-0000-000000000000"
+            },
+            "FlowState": {
+              "Version": 0,
+              "FlowId": "00000000-0000-0000-0000-000000000000",
+              "PageState": {
+                "Status": "ENTERING_PAGE",
+                "Name": "Start Page",
+                "PageId": "START_PAGE"
+              },
+              "Name": "Default Start Flow"
+            }
+          },
+          "Type": "INITIAL_STATE"
+        }
+      },
+      {
+        "Step 2": {
+          "FunctionExecution": {
+            "Responses": [
+              {
+                "responseType": "HANDLER_PROMPT",
+                "text": {
+                  "text": [
+                    "“Hello, and welcome to customer care support virtual bot, available 24/7. I’m here to assist you with plan information, support ticket creation, plan modifications, or connecting you to a live agent. How may I assist you today?”"
+                  ]
+                },
+                "source": "VIRTUAL_AGENT"
+              },
+              {
+                "payload": {
+                  "richContent": [
+                    [
+                      {
+                        "options": [
+                          {
+                            "text": "New Customer Inquiry"
+                          },
+                          {
+                            "text": "Existing Customer Query"
+                          },
+                          {
+                            "text": "Log Support Ticket"
+                          },
+                          {
+                            "text": "Change Plan"
+                          },
+                          {
+                            "text": "Live Agent Request"
+                          }
+                        ],
+                        "type": "chips"
+                      }
+                    ]
+                  ]
+                },
+                "source": "VIRTUAL_AGENT",
+                "responseType": "HANDLER_PROMPT"
+              }
+            ]
+          },
+          "Type": "STATE_MACHINE",
+          "StateMachine": {
+            "TriggeredTransitionRouteId": "6ca3d873-90d7-4156-b6b7-3f9d4e83fa0b",
+            "FlowState": {
+              "PageState": {
+                "Name": "Start Page",
+                "PageId": "START_PAGE",
+                "Status": "TRANSITION_ROUTING"
+              },
+              "Version": 0,
+              "FlowId": "00000000-0000-0000-0000-000000000000",
+              "Name": "Default Start Flow"
+            },
+            "FlowLevelTransition": true,
+            "TriggeredIntent": "Default Welcome Intent"
+          }
+        }
+      },
+      {
+        "Step 3": {
+          "Type": "STATE_MACHINE",
+          "StateMachine": {
+            "FlowState": {
+              "PageState": {
+                "PageId": "START_PAGE",
+                "Status": "TRANSITION_ROUTING",
+                "Name": "Start Page"
+              },
+              "Name": "Default Start Flow",
+              "Version": 0,
+              "FlowId": "00000000-0000-0000-0000-000000000000"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "generativeInfo": {
+    "actionTracingInfo": {
+      "actions": [
+        {
+          "userUtterance": {
+            "text": "hi"
+          }
+        },
+        {
+          "agentUtterance": {
+            "text": "“Hello, and welcome to customer care support virtual bot, available 24/7. I’m here to assist you with plan information, support ticket creation, plan modifications, or connecting you to a live agent. How may I assist you today?”"
+          }
+        }
+      ],
+      "conversationState": "OUTPUT_STATE_PENDING",
+      "name": "projects/wise-colledge-gecq/locations/global/agents/84c0d76b-7e10-477c-b706-4b8697256210/playbooks/-/examples/-"
+    }
+  },
+  "intent": {
+    "displayName": "Default Welcome Intent",
+    "name": "projects/wise-colledge-gecq/locations/global/agents/84c0d76b-7e10-477c-b706-4b8697256210/intents/00000000-0000-0000-0000-000000000000"
+  },
+  "intentDetectionConfidence": 1,
+  "languageCode": "en",
+  "match": {
+    "confidence": 1,
+    "intent": {
+      "displayName": "Default Welcome Intent",
+      "name": "projects/wise-colledge-gecq/locations/global/agents/84c0d76b-7e10-477c-b706-4b8697256210/intents/00000000-0000-0000-0000-000000000000"
+    },
+    "matchType": "INTENT",
+    "resolvedInput": "hi"
+  },
+  "responseMessages": [
+    {
+      "responseType": "HANDLER_PROMPT",
+      "source": "VIRTUAL_AGENT",
+      "text": {
+        "redactedText": [
+          "“Hello, and welcome to customer care support virtual bot, available 24/7. I’m here to assist you with plan information, support ticket creation, plan modifications, or connecting you to a live agent. How may I assist you today?”"
+        ],
+        "text": [
+          "“Hello, and welcome to customer care support virtual bot, available 24/7. I’m here to assist you with plan information, support ticket creation, plan modifications, or connecting you to a live agent. How may I assist you today?”"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "richContent": [
+          [
+            {
+              "options": [
+                {
+                  "text": "New Customer Inquiry"
+                },
+                {
+                  "text": "Existing Customer Query"
+                },
+                {
+                  "text": "Log Support Ticket"
+                },
+                {
+                  "text": "Change Plan"
+                },
+                {
+                  "text": "Live Agent Request"
+                }
+              ],
+              "type": "chips"
+            }
+          ]
+        ]
+      },
+      "responseType": "HANDLER_PROMPT",
+      "source": "VIRTUAL_AGENT"
+    }
+  ],
+  "text": "hi"
+}
